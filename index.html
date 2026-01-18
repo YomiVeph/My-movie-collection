@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Movie Project</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h3>Movie Connections</h3>
+      <input id="search" placeholder="Search latest movies" />
+      <select name="movie" id="filter">
+        <option value="popular">Popular</option>
+        <option value="top_rated">Top Rated</option>
+        <option value="latest">Lastest</option>
+      </select>
+      <select name="" id="sort">
+        <option value="">Sort Rating</option>
+        <option value="high">High</option>
+        <option value="low">Low</option>
+      </select>
+      <button id="favBtn">Favorites</button>
+    </header>
+    <div class="movies" id="movies"></div>
+    <div class="modal" id="modal">
+      <span class="close" id="close">&times;</span>
+      <div class="modal-content">
+        <iframe id="trailer" src="" frameborder="0" allowfullscreen></iframe>
+        <div id="details"></div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
